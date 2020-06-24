@@ -5,7 +5,7 @@ class Dog
     attr_reader :name
     def initialize(name)
         @name = name
-        @@all << self
+       self.save
     end
 
     #is a class method returns all dog instances
@@ -24,7 +24,7 @@ class Dog
     end
 
     def save
-        @@ll << self
+        @@all << self
     end
 
 end
